@@ -1,9 +1,16 @@
+import Head from "next/head";
 const Kandy = () => {
   return (
-    <div>
-      <h1>Kandy</h1>
-      <p>lorem blah blah blah</p>
-    </div>
+    <>
+      <Head>
+        <title>Luffy Lists | Kandy </title>
+        <meta name="keywords" content="luffy" />
+      </Head>
+      <div>
+        <h1>Kandy</h1>
+        <p>lorem blah blah blah</p>
+      </div>
+    </>
   );
 };
 
