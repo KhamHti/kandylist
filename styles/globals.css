@@ -35,3 +35,16 @@ footer {
   color: #777;
   border-top: 1px solid #eaeaea;
 }
+.not-found {
+  text-align: center;
+}
+.not-found a{
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+}
