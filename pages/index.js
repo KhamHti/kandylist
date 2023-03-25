@@ -11,7 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -23,7 +22,6 @@ export default function Home() {
         mollit anim id est laborum
       </p>
       <Link href="/kandy">see kandy</Link>
-      <Footer />
     </div>
   );
 }

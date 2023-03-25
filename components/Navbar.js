@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <h1>Kandy Lists</h1>
+        <h1>Kandy Navbar</h1>
       </div>
       <Link href="/" legacyBehavior>
         <a>Home</a>
