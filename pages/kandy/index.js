@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../../styles/Kandy.module.css";
 
 export const getStaticProps = async () => {
@@ -19,14 +20,11 @@ const Kandy = ({ kandies }) => {
       <div>
         <h1>Kandys</h1>
         {kandies.map((kandy) => (
-          <div key={kandy.id}>
+          <Link href={"/kandy/" + kandy.id} legacyBehavior key={kandy.id}>
             <a className={styles.single}>
               <h3>{kandy.name}</h3>
-              <h5>username: {kandy.username}</h5>
-              <h5>email: {kandy.email}</h5>
-              <h5>website: {kandy.website}</h5>
             </a>
-          </div>
+          </Link>
         ))}
       </div>
     </>
