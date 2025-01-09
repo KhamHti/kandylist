@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/Kandy.module.css";
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.org/users");
   const data = await res.json();
   return {
     props: { kandies: data },
